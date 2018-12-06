@@ -1,0 +1,33 @@
+#showbox {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#text {
+	top: -2%;
+	position: absolute;
+}
+
+#text>span {
+	white-space:nowrap;
+	line-height: 100vh;
+	vertical-align: center;
+	font-weight: 700;
+	font-family: 'Noto Sans';
+}
+
+.text {
+	height: 100vh;
+	position: absolute;
+	text-align: center;
+}
+
+.text>span {
+	white-space:nowrap;
+	line-height: 100vh;
+	vertical-align: center;
+	font-weight: 700;
+	font-family: 'Noto Sans';
+}
