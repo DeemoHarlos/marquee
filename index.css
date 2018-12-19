@@ -5,29 +5,58 @@
 	position: relative;
 }
 
-#text {
-	top: -2%;
+#pianoroll {
+	height: 120px;
+	position: relative;
+	width: 100%;
+}
+
+#pianoroll .wrap {
+	height: 100%;
+	width: calc(52 * 24px);
+	overflow: hidden;
+}
+
+#pianoroll .white-key {
+	display: inline-block;
+	background-color: white;
+	width: 24px;
+	height: 100%;
+	border-left: #888888 .25px solid;
+	border-right: #888888 .25px solid; 
+}
+
+#pianoroll .black-key {
+	background-color: black;
+	position: absolute;
+	width: 12px;
+	top: 0;
+	height: 80px;
+}
+
+#notearea {
+	position: relative;
+	flex: 1 0 0;
+	overflow: hidden;
+}
+
+#notearea>.wrap {
+	min-height:1000;
+	width: calc(52 * 24px);
+	position: absolute;
+	bottom: 0;
+}
+
+#notearea .note {
+	background-color: #FFFF88;
 	position: absolute;
 }
 
-#text>span {
-	white-space:nowrap;
-	line-height: 100vh;
-	vertical-align: center;
-	font-weight: 700;
-	font-family: 'Noto Sans';
+#notearea .white-key {
+	width: 24px;
 }
 
-.text {
-	height: 100vh;
-	position: absolute;
-	text-align: center;
+#notearea .black-key {
+	width: 12px;
 }
 
-.text>span {
-	white-space:nowrap;
-	line-height: 100vh;
-	vertical-align: center;
-	font-weight: 700;
-	font-family: 'Noto Sans';
-}
